@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Usuários</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <h1>Gerenciamento de Usuários</h1>
+
+    <form id="userForm">
+        <input type="hidden" id="userId" name="id">
+        <div>
+            <label for="user">Usuário:</label>
+            <input type="text" id="user" name="user" required>
+        </div>
+        <div>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="pass">Senha:</label>
+            <input type="password" id="pass" name="pass" required>
+        </div>
+        <div>
+            <label for="type">Tipo:</label>
+            <input type="number" id="type" name="type" required>
+        </div>
+        <button type="submit">Salvar</button>
+    </form>
+
+    <h2>Lista de Usuários</h2>
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Usuário</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Senha</th>
+                <th>Tipo</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Linhas de usuários vão aqui -->
+        </tbody>
+    </table>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
